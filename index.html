@@ -1,0 +1,340 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="subsidy.css" rel="stylesheet">
+    <title>Агрегатор мер поддержки</title>
+</head>
+<body>
+
+<header class="header">
+    <div class="header__wrapper container">
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="img/default.jpg" alt="" width="30" height="30" class="d-inline-block align-text-top">
+                    Агрегатор мер поддержки
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Программы</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="news2.html">Новости</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                               data-bs-toggle="dropdown" aria-expanded="false">
+                                Меры поддержки
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="measure.html">Все меры поддержки</a></li>
+                                <li><a class="dropdown-item" href="measure.html">Юридическим лицам</a></li>
+                                <li><a class="dropdown-item" href="measure.html">Индивидуальным предпринимателям</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="measure.html">Физическим лицам</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Найти" aria-label="Search">
+                        <button class="btn btn-outline-secondary me-2" type="submit">Поиск</button>
+                        <button class="btn btn-secondary" type="submit">Войти</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+
+    </div>
+</header>
+
+<main class="content">
+
+    <section class="slider">
+        <div id="carouselExampleCaptions" class="carousel carousel-dark slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/default.jpg" class="d-block" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Агрегатор мер поддержки</h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur corporis, deleniti eum
+                            numquam quas suscipit.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/default.jpg" class="d-block" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Поддержка юридических лиц</h5>
+                        <p>Ipsa libero maxime molestias possimus quaerat quis recusandae rerum sed sequi sit vitae
+                            voluptates! Nisi.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/default.jpg" class="d-block" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Поддержка физических лиц</h5>
+                        <p>Tempora tenetur velit veniam veritatis voluptatem? Aliquam ducimus maiores natus odit soluta
+                            veritatis! Architecto, aut!</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+
+    <section class="advantages">
+        <div class="advantages__wrapper container">
+            <h2 class="advantages__header text-center py-2">Наши преимущества</h2>
+
+            <div class="row row-cols-2 row-cols-sm-2 row-cols-lg-3 row-cols-xxl-4 g-2">
+                <div class="col">
+                    <div class="h-100">
+                        <img src="img/default.jpg" class="advantage__image" alt="...">
+                        <div class="advantage__comment text-center">
+                            <h5 class="card-title">Контракты</h5>
+                            <p class="card-text">
+                                Заключайте контракты с другими участниками прямо в личном кабинете
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="h-100">
+                        <img src="img/default.jpg" class="advantage__image" alt="...">
+                        <div class="advantage__comment text-center">
+                            <h5 class="card-title">Партнеры</h5>
+                            <p class="card-text">
+                                Находите партнеров из других отраслей
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="h-100">
+                        <img src="img/default.jpg" class="advantage__image" alt="...">
+                        <div class="advantage__comment text-center">
+                            <h5 class="card-title">Поддержка</h5>
+                            <p class="card-text">
+                                Получайте поддержку и консультации с консьерж-сервисом
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="h-100">
+                        <img src="img/default.jpg" class="advantage__image" alt="...">
+                        <div class="advantage__comment text-center">
+                            <h5 class="card-title">Поиск</h5>
+                            <p class="card-text">Открывайте новые возможности с помощью поиска на основе искусственного
+                                интеллекта</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="news mb-2">
+        <div class="news__wrapper container">
+            <h2 class="news__header text-center py-2">Новости</h2>
+
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 row-cols-xxl-4 g-2">
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="img/default.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">ArchGlass 2021 - Международный форум индустрии архитектурного
+                                стекла</h5>
+                            <p class="card-text">
+                                Союз архитекторов России и Союз московских архитекторов приглашают на
+                                3-й международный форум индустрии архитектурного стекла ArchGlass 2021.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="img/default.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Territorial development strategy</h5>
+                            <p class="card-text">
+                                Конференция по Стратегии комплексного развития территорий соберет
+                                экспертное сообщество и реальные кейсы на примере которых будут рассмотрены вопросы
+                                территориального планирования, земельного администрирования, технического регулирования
+                                и деятельности по улучшению бизнес-климата
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="img/default.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Цифровизация транспорта 2021. Процесс трансформации: оценка и
+                                перспективы</h5>
+                            <p class="card-text">
+                                Лидеры отрасли уже реализуют свои собственные стратегии и внедряют
+                                новые бизнес-модели на основе цифровых технологий.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="img/default.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">МАСТЕР - КЛАСС "ОСНОВЫ ИНВЕСТИЦИОННОЙ ГРАМОТНОСТИ В 21 ВЕКЕ" от
+                                Rocket University</h5>
+                            <p class="card-text">
+                                Погружение в мир современных финансов. Инструменты инвестиций. Игра - симуляция работы
+                                инвестиционного аналитика
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="img/default.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Digital Transformation Day 2021</h5>
+                            <p class="card-text">
+                                В ходе конференции предлагается обсудить следующий круг вопросов:
+                                Цифровая трансформация бизнеса крупной компании как комплексный взгляд на сложную
+                                многоаспектную структуру деятельности.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="img/default.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">ODSC APAC Virtual Conference 2021</h5>
+                            <p class="card-text">
+                                ODSC APAC Virtual Conference 2021 is one of the largest applied data
+                                science conferences. Our speakers include core contributors to many open source
+                                libraries and languages.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="img/default.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">ChipEXPO-2021</h5>
+                            <p class="card-text">
+                                Выставка включена в план официальных выставочных мероприятий
+                                Министерства промышленности и торговли Российской Федерации.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="img/default.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Мастер-класс по личностному росту на тему: "Мотивация в работе с
+                                командой"</h5>
+                            <p class="card-text">
+                                Обучающее мероприятие, направленное на разработку общественных
+                                инициатив участников проекта, посредством образовательной составляющей, подкрепленной
+                                ключевыми навыками и практическими приемами.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+</main>
+
+<footer class="footer">
+    <div class="footer__wrapper container">
+        <div class="footer__main row g-2">
+            <div class="footer__info col-12 col-sm-6 col-lg-4 col-xxl-3">
+                <div class="footer__brend mb-2">
+                    <img src="img/default.jpg" alt="" class="footer__brend__logo">
+                    <div class="footer__brend__name ps-2">Агрегатор мер поддержки</div>
+                </div>
+                <div class="footer__social mb-2">
+                    <a href="" class="footer__social__link"><img src="img/default.jpg" alt=""
+                                                                 class="footer__social__logo"></a>
+                    <a href="" class="footer__social__link"><img src="img/default.jpg" alt=""
+                                                                 class="footer__social__logo"></a>
+                    <a href="" class="footer__social__link"><img src="img/default.jpg" alt=""
+                                                                 class="footer__social__logo"></a>
+                    <a href="" class="footer__social__link"><img src="img/default.jpg" alt=""
+                                                                 class="footer__social__logo"></a>
+                </div>
+                <div class="footer__contacts mb-2">
+                    <div class="footer__phone">8-903-913-9239</div>
+                    <div class="footer__mail">subsidy@yandex.ru</div>
+                </div>
+                <div class="footer__support">
+                    Техническая поддержка
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-8 col-xxl-9">
+                <ul class="footer__links">
+                    <li><a href="#">О проекте</a></li>
+                    <li><a href="#">Программы</a></li>
+                    <li><a href="#">Новости</a></li>
+                    <li><a href="#">Поддержка юридических лиц</a></li>
+                    <li><a href="#">Поддержка индивидуальных предпринимателей</a></li>
+                    <li><a href="#">Поддержка физических лиц</a></li>
+                    <li><a href="#">Технологии будущего</a></li>
+                    <li><a href="#">Биржа патентов</a></li>
+                    <li><a href="#">Участники</a></li>
+                    <li><a href="#">Поиск партнеров</a></li>
+                    <li><a href="#">Калькулятор мер поддержки</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <div class="footer__copyright pb-3">
+            Все права защищены
+        </div>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+</body>
+</html>

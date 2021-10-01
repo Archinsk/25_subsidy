@@ -1,0 +1,550 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="subsidy.css" rel="stylesheet">
+    <title>Агрегатор мер поддержки</title>
+</head>
+<body>
+
+<header class="header">
+    <div class="header__wrapper container">
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <img src="img/default.jpg" alt="" width="30" height="30" class="d-inline-block align-text-top">
+                    Агрегатор мер поддержки
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Программы</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Новости</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                               data-bs-toggle="dropdown" aria-expanded="false">
+                                Меры поддержки
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="measure.html">Все меры поддержки</a></li>
+                                <li><a class="dropdown-item" href="measure.html">Юридическим лицам</a></li>
+                                <li><a class="dropdown-item" href="measure.html">Индивидуальным предпринимателям</a>
+                                </li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="measure.html">Физическим лицам</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Найти" aria-label="Search">
+                        <button class="btn btn-outline-secondary me-2" type="submit">Поиск</button>
+                        <button class="btn btn-secondary" type="submit">Войти</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+
+    </div>
+</header>
+
+<main class="content">
+
+    <div class="profile__wrapper container">
+        <article class="profile">
+            <h2 class="profile__title">Личный кабинет</h2>
+            <div class="profile__body">
+                <section class="profile__user__info">
+                    <div class="profile__user__info__details">
+                        <img class="profile__avatar me-2" src="img/default.jpg" alt="">
+                        <div class="profile__text">
+                            <div class="profile__user__name">Васильев Михаил Анатольевич</div>
+                            <div class="profile__user__snils">СНИЛС: 073-976-837 25</div>
+                        </div>
+                    </div>
+                    <button type="button" class="user__competence btn btn-outline-secondary" data-bs-toggle="modal"
+                            data-bs-target="#profileEdit">Редактировать
+                    </button>
+                </section>
+
+                <nav>
+                    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                        <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab"
+                                data-bs-target="#personal-info" type="button" role="tab"
+                                aria-controls="nav-personal-info"
+                                aria-selected="true">Личные данные
+                        </button>
+                        <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#requests"
+                                type="button" role="tab" aria-controls="nav-requests" aria-selected="false">Заявки
+                        </button>
+                    </div>
+                </nav>
+                <div class="tab-content" id="nav-tabContent">
+                    <div class="tab-pane fade show active" id="personal-info" role="tabpanel">
+                        <section class="user__basic__info">
+                            <h3 class="user__basic__info__title">Основная информация</h3>
+                            <div class="user__about term__block">
+                                <div class="user__about__term term">
+                                    Обо мне:
+                                    <span class="dotted__line"></span>
+                                </div>
+                                <div class="user__about__details">
+                                    Биография. Дополнительная информация
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="user__phone term__block col-md-6">
+                                    <div class="user__phone__term term">
+                                        Телефон:
+                                        <span class="dotted__line"></span>
+                                    </div>
+                                    <div class="user__phone__details">
+                                        8-903-903-3661
+                                    </div>
+                                </div>
+                                <div class="user__mail term__block col-md-6">
+                                    <div class="user__mail__term term">
+                                        E-mail:
+                                        <span class="dotted__line"></span>
+                                    </div>
+                                    <div class="user__mail__details">
+                                        mgp-nsk@yandex.ru
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="user__social term__block">
+                                <div class="user__social__term term">
+                                    Соцсети:
+                                    <span class="dotted__line"></span>
+                                </div>
+                                <div class="user__social__details">
+                                    vk.ru, ok.ru
+                                </div>
+
+                            </div>
+                        </section>
+
+                        <section class="user__competencies">
+                            <h3 class="user__competencies__title">Компетенции</h3>
+                            <span class="badge bg-secondary">Информационные технологии</span>
+                            <span class="badge bg-secondary">Инженерия</span>
+                            <span class="badge bg-secondary">Архитектура</span>
+                            <button class="user__competence btn btn-outline-secondary">+ Добавить</button>
+                        </section>
+
+                        <section class="experience">
+                            <h3 class="experience__title">Опыт работы</h3>
+                            <div class="experience__company term__block">
+                                <div class="experience__company__term term">
+                                    Компания:
+                                    <span class="dotted__line"></span>
+                                </div>
+                                <div class="experience__company__details">
+                                    Информационные системы и сервисы
+                                </div>
+                            </div>
+                            <div class="experience__position term__block">
+                                <div class="experience__position__term term">
+                                    Должность:
+                                    <span class="dotted__line"></span>
+                                </div>
+                                <div class="experience__position__details">
+                                    Аналитик
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="experience__start__date term__block col-md-6">
+                                    <div class="experience__start__date__term term">
+                                        Дата начала:
+                                        <span class="dotted__line"></span>
+                                    </div>
+                                    <div class="experience__start__date__details">
+                                        14.02.2018
+                                    </div>
+                                </div>
+                                <div class="experience__finish__date term__block col-md-6">
+                                    <div class="experience__finish__date__term term">
+                                        Дата окончания:
+                                        <span class="dotted__line"></span>
+                                    </div>
+                                    <div class="experience__finish__date__details">
+                                        14.02.2022
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="experience__info term__block">
+                                <div class="experience__info__term term">
+                                    Описание:
+                                    <span class="dotted__line"></span>
+                                </div>
+                                <div class="experience__info__details">
+                                    Общение с заказчиком. Подготовка технических документов
+                                </div>
+                            </div>
+                        </section>
+                        <section class="education">
+                            <h3 class="education__title">Образование</h3>
+                            <div class="education__institution term__block">
+                                <div class="education__institution__term term">
+                                    Учебное заведение:
+                                    <span class="dotted__line"></span>
+                                </div>
+                                <div class="education__institution__details">
+                                    НГАХА
+                                </div>
+                            </div>
+                            <div class="education__specialization term__block">
+                                <div class="education__specialization__term term">
+                                    Специальность:
+                                    <span class="dotted__line"></span>
+                                </div>
+                                <div class="education__specialization__details">
+                                    Архитектор
+                                </div>
+                            </div>
+                            <div class="education__grade term__block">
+                                <div class="education__grade__term term">
+                                    Степень:
+                                    <span class="dotted__line"></span>
+                                </div>
+                                <div class="education__grade__details">
+                                    Специалитет
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="education__start__date term__block col-md-6">
+                                    <div class="education__start__date__term term">
+                                        Год начала:
+                                        <span class="dotted__line"></span>
+                                    </div>
+                                    <div class="education__start__date__details">
+                                        1997
+                                    </div>
+                                </div>
+                                <div class="education__finish__date term__block col-md-6">
+                                    <div class="education__finish__date__term term">
+                                        Год окончания:
+                                        <span class="dotted__line"></span>
+                                    </div>
+                                    <div class="education__finish__date__details">
+                                        2003
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                    <div class="tab-pane fade" id="requests" role="tabpanel" aria-labelledby="nav-requests-tab">
+                        <h2 class="measures__heading py-2">Заявки<span class="badge bg-secondary">15</span></h2>
+
+                        <div class="row row-cols-1 g-2 mb-2">
+                            <div class="col">
+                                <div class="card request__card">
+                                    <div class="card-body">
+                                        <h5 class="card-title mb-0">
+                                            <a href="subsidy.html">
+                                                <span class="badge bg-secondary me-2">№001256</span>Грант участникам
+                                                инновационного кластера на территории города Москвы на возмещение затрат в целях
+                                                реализации комплексных инновационных проектов (КИП – собственные средства)
+                                            </a>
+                                        </h5>
+                                    </div>
+                                    <div class="card-footer bg-transparent request__card__footer">
+                                        <p>Текущий статус: зарегистрировано</p>
+                                        <p>Дата подачи: 01.01.2021</p>
+                                        <p>Статус обновлен: 01.08.2021</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card request__card">
+                                    <div class="card-body">
+                                        <h5 class="card-title mb-0">
+                                            <a href="subsidy.html">
+                                                <span class="badge bg-secondary me-2">№001256</span>Грант участникам
+                                                инновационного кластера на территории города Москвы на возмещение затрат в целях
+                                                реализации комплексных инновационных проектов (КИП – собственные средства)
+                                            </a>
+                                        </h5>
+                                    </div>
+                                    <div class="card-footer bg-transparent request__card__footer">
+                                        <p>Текущий статус: зарегистрировано</p>
+                                        <p>Дата подачи: 01.01.2021</p>
+                                        <p>Статус обновлен: 01.08.2021</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card request__card">
+                                    <div class="card-body">
+                                        <h5 class="card-title mb-0">
+                                            <a href="subsidy.html">
+                                                <span class="badge bg-secondary me-2">№001256</span>Грант участникам
+                                                инновационного кластера на территории города Москвы на возмещение затрат в целях
+                                                реализации комплексных инновационных проектов (КИП – собственные средства)
+                                            </a>
+                                        </h5>
+                                    </div>
+                                    <div class="card-footer bg-transparent request__card__footer">
+                                        <p>Текущий статус: зарегистрировано</p>
+                                        <p>Дата подачи: 01.01.2021</p>
+                                        <p>Статус обновлен: 01.08.2021</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card request__card">
+                                    <div class="card-body">
+                                        <h5 class="card-title mb-0">
+                                            <a href="subsidy.html">
+                                                <span class="badge bg-secondary me-2">№001256</span>Грант участникам
+                                                инновационного кластера на территории города Москвы на возмещение затрат в целях
+                                                реализации комплексных инновационных проектов (КИП – собственные средства)
+                                            </a>
+                                        </h5>
+                                    </div>
+                                    <div class="card-footer bg-transparent request__card__footer">
+                                        <p>Текущий статус: зарегистрировано</p>
+                                        <p>Дата подачи: 01.01.2021</p>
+                                        <p>Статус обновлен: 01.08.2021</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card request__card">
+                                    <div class="card-body">
+                                        <h5 class="card-title mb-0">
+                                            <a href="subsidy.html">
+                                                <span class="badge bg-secondary me-2">№001256</span>Грант участникам
+                                                инновационного кластера на территории города Москвы на возмещение затрат в целях
+                                                реализации комплексных инновационных проектов (КИП – собственные средства)
+                                            </a>
+                                        </h5>
+                                    </div>
+                                    <div class="card-footer bg-transparent request__card__footer">
+                                        <p>Текущий статус: зарегистрировано</p>
+                                        <p>Дата подачи: 01.01.2021</p>
+                                        <p>Статус обновлен: 01.08.2021</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card request__card">
+                                    <div class="card-body">
+                                        <h5 class="card-title mb-0">
+                                            <a href="subsidy.html">
+                                                <span class="badge bg-secondary me-2">№001256</span>Грант участникам
+                                                инновационного кластера на территории города Москвы на возмещение затрат в целях
+                                                реализации комплексных инновационных проектов (КИП – собственные средства)
+                                            </a>
+                                        </h5>
+                                    </div>
+                                    <div class="card-footer bg-transparent request__card__footer">
+                                        <p>Текущий статус: зарегистрировано</p>
+                                        <p>Дата подачи: 01.01.2021</p>
+                                        <p>Статус обновлен: 01.08.2021</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card request__card">
+                                    <div class="card-body">
+                                        <h5 class="card-title mb-0">
+                                            <a href="subsidy.html">
+                                                <span class="badge bg-secondary me-2">№001256</span>Грант участникам
+                                                инновационного кластера на территории города Москвы на возмещение затрат в целях
+                                                реализации комплексных инновационных проектов (КИП – собственные средства)
+                                            </a>
+                                        </h5>
+                                    </div>
+                                    <div class="card-footer bg-transparent request__card__footer">
+                                        <p>Текущий статус: зарегистрировано</p>
+                                        <p>Дата подачи: 01.01.2021</p>
+                                        <p>Статус обновлен: 01.08.2021</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card request__card">
+                                    <div class="card-body">
+                                        <h5 class="card-title mb-0">
+                                            <a href="subsidy.html">
+                                                <span class="badge bg-secondary me-2">№001256</span>Грант участникам
+                                                инновационного кластера на территории города Москвы на возмещение затрат в целях
+                                                реализации комплексных инновационных проектов (КИП – собственные средства)
+                                            </a>
+                                        </h5>
+                                    </div>
+                                    <div class="card-footer bg-transparent request__card__footer">
+                                        <p>Текущий статус: зарегистрировано</p>
+                                        <p>Дата подачи: 01.01.2021</p>
+                                        <p>Статус обновлен: 01.08.2021</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card request__card">
+                                    <div class="card-body">
+                                        <h5 class="card-title mb-0">
+                                            <a href="subsidy.html">
+                                                <span class="badge bg-secondary me-2">№001256</span>Грант участникам
+                                                инновационного кластера на территории города Москвы на возмещение затрат в целях
+                                                реализации комплексных инновационных проектов (КИП – собственные средства)
+                                            </a>
+                                        </h5>
+                                    </div>
+                                    <div class="card-footer bg-transparent request__card__footer">
+                                        <p>Текущий статус: зарегистрировано</p>
+                                        <p>Дата подачи: 01.01.2021</p>
+                                        <p>Статус обновлен: 01.08.2021</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card request__card">
+                                    <div class="card-body">
+                                        <h5 class="card-title mb-0">
+                                            <a href="subsidy.html">
+                                                <span class="badge bg-secondary me-2">№001256</span>Грант участникам
+                                                инновационного кластера на территории города Москвы на возмещение затрат в целях
+                                                реализации комплексных инновационных проектов (КИП – собственные средства)
+                                            </a>
+                                        </h5>
+                                    </div>
+                                    <div class="card-footer bg-transparent request__card__footer">
+                                        <p>Текущий статус: зарегистрировано</p>
+                                        <p>Дата подачи: 01.01.2021</p>
+                                        <p>Статус обновлен: 01.08.2021</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+
+            </div>
+        </article>
+    </div>
+
+    <div class="modal fade" id="profileEdit" tabindex="-1" aria-labelledby="profileEditLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="profileEditLabel">Редактирование профиля</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="">
+                        <div class="mb-3">
+                            <label for="aboutMeProfileEdit" class="form-label">Обо мне</label>
+                            <textarea class="form-control" id="aboutMeProfileEdit" rows="3">Биография. Дополнительная информация</textarea>
+                        </div>
+
+                        <h3>Контактные данные</h3>
+                        <div class="mb-3">
+                            <label for="emailProfileEdit" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="emailProfileEdit" value="mgp-nsk@yandex.ru">
+                        </div>
+                        <button class="btn btn-outline-secondary">+ Добавить</button>
+                        <div class="mb-3">
+                            <label for="phoneProfileEdit" class="form-label">Телефон</label>
+                            <input type="tel" class="form-control" id="phoneProfileEdit" value="+7(903)903-3661">
+                        </div>
+                        <button class="btn btn-outline-secondary">+ Добавить</button>
+                        <div class="mb-3">
+                            <label for="socialProfileEdit" class="form-label">Социальные сети</label>
+                            <input type="url" class="form-control" id="socialProfileEdit" value="+7(903)903-3661">
+                        </div>
+                        <button class="btn btn-outline-secondary">+ Добавить</button>
+
+                        <h3>Опыт работы</h3>
+                        <div class="mb-3">
+                            <label for="emailProfileEdit" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="emailProfileEdit" value="mgp-nsk@yandex.ru">
+                        </div>
+
+                        <h3>Образование</h3>
+
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Отменить</button>
+                    <button type="button" class="btn btn-primary">Сохранить</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</main>
+
+<footer class="footer">
+    <div class="footer__wrapper container">
+        <div class="footer__main row g-2">
+            <div class="footer__info col-12 col-sm-6 col-lg-4 col-xxl-3">
+                <div class="footer__brend mb-2">
+                    <img src="img/default.jpg" alt="" class="footer__brend__logo">
+                    <div class="footer__brend__name ps-2">Агрегатор мер поддержки</div>
+                </div>
+                <div class="footer__social mb-2">
+                    <a href="" class="footer__social__link"><img src="img/default.jpg" alt=""
+                                                                 class="footer__social__logo"></a>
+                    <a href="" class="footer__social__link"><img src="img/default.jpg" alt=""
+                                                                 class="footer__social__logo"></a>
+                    <a href="" class="footer__social__link"><img src="img/default.jpg" alt=""
+                                                                 class="footer__social__logo"></a>
+                    <a href="" class="footer__social__link"><img src="img/default.jpg" alt=""
+                                                                 class="footer__social__logo"></a>
+                </div>
+                <div class="footer__contacts mb-2">
+                    <div class="footer__phone">8-903-913-9239</div>
+                    <div class="footer__mail">subsidy@yandex.ru</div>
+                </div>
+                <div class="footer__support">
+                    Техническая поддержка
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-8 col-xxl-9">
+                <ul class="footer__links">
+                    <li><a href="#">О проекте</a></li>
+                    <li><a href="#">Программы</a></li>
+                    <li><a href="#">Новости</a></li>
+                    <li><a href="#">Поддержка юридических лиц</a></li>
+                    <li><a href="#">Поддержка индивидуальных предпринимателей</a></li>
+                    <li><a href="#">Поддержка физических лиц</a></li>
+                    <li><a href="#">Технологии будущего</a></li>
+                    <li><a href="#">Биржа патентов</a></li>
+                    <li><a href="#">Участники</a></li>
+                    <li><a href="#">Поиск партнеров</a></li>
+                    <li><a href="#">Калькулятор мер поддержки</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <div class="footer__copyright pb-3">
+            Все права защищены
+        </div>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+</body>
+</html>

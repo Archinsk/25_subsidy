@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="6dbddf8b-1e69-4c21-b297-2be24547838d" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1wTLGEn875PwkHSImpQtVUOghPV" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../27_react-bootstrap" />
+    <property name="settings.editor.selected.configurable" value="terminal" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6dbddf8b-1e69-4c21-b297-2be24547838d" name="Default Changelist" comment="" />
+      <created>1628477534002</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1628477534002</updated>
+      <workItem from="1628477535223" duration="5083000" />
+      <workItem from="1628485805459" duration="10890000" />
+      <workItem from="1628568906627" duration="6990000" />
+      <workItem from="1628650467893" duration="2626000" />
+      <workItem from="1628734852358" duration="1879000" />
+      <workItem from="1628821119323" duration="7032000" />
+      <workItem from="1629081028242" duration="19875000" />
+      <workItem from="1629166981086" duration="13862000" />
+      <workItem from="1629253339486" duration="2619000" />
+      <workItem from="1629262585320" duration="75000" />
+      <workItem from="1629262680037" duration="231000" />
+      <workItem from="1631530878119" duration="324000" />
+      <workItem from="1631676683198" duration="1256000" />
+      <workItem from="1631758934159" duration="1203000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="552" y="178" key="#Notifications" timestamp="1628485569259">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="178" key="#Notifications/-1920.96.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1628485569259" />
+    <state x="594" y="298" key="EditFileWatcherDialog" timestamp="1628659736937">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="594" y="298" key="EditFileWatcherDialog/-1920.96.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1628659736937" />
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1629262892622">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="740" y="275" key="FileChooserDialogImpl/-1920.96.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1629262892622" />
+    <state x="461" y="162" key="SettingsEditor" timestamp="1629262894110">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="461" y="162" key="SettingsEditor/-1920.96.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1629262894110" />
+    <state x="616" y="240" key="run.anything.popup" timestamp="1629110496190">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="616" y="240" key="run.anything.popup/-1920.96.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1629110496190" />
+  </component>
+</project>
